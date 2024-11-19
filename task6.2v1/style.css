@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 300px  30%;
+}
+
+div {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    background-color: blue;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+div::before,
+div::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+}
+
+div::before {
+    width: 160px;
+    height: 160px;
+    background-color: yellow;
+    z-index: -1;
+}
+
+div::after {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    z-index: 1;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: lighter;
+    z-index: 2;
+} 
+
+
+/*.circle {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 0 50px yellow, 
+                0 0 0 100px blue;
+}
+
+h1 {
+    color: black;
+    font-size: 3rem;
+    font-weight: lighter;
+    font-style: normal;
+} 
+    Другий спосіб */

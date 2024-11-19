@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 80px 0 ;
+}
+
+div {
+    display: flex;
+    text-align: center;
+}
+
+div::before,
+div::after {
+        content: "";
+        flex: 1;
+        height: 5px;
+        background-color: black;
+        margin: 0 10px;
+        transform: translateY(16px);
+}
+
+h1 {
+    font-weight: normal;
+}
