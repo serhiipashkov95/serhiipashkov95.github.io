@@ -144,8 +144,6 @@
 
 .tasks {
   display: flex;
+  flex-wrap: wrap;
 }
 
-.task__box:first-child {
-  margin-left: -5px;
-}
